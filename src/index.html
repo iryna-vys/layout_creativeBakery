@@ -3,11 +3,109 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Creative bakery</title>
+    <link rel="icon" href="./images/icon.png">
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&family=Rubik&display=swap"
+      rel="stylesheet"
+    >
   </head>
-  <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+  <body class="page">
+    <header class="page__header header">
+      <input
+        class="header__checkbox"
+        type="checkbox"
+        id="nav-toggler"
+      >
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <a href="#home">
+            <img
+            class="logo"
+            src="./images/logo.png"
+            alt="Logo"
+            >
+          </a>
+        </div>
+        <h1 class="header__title">
+          Creative bakery
+        </h1>
+        <p class="header__paragraph">
+          We bake your fantasies: croissants<br>cakes, cookies, and cupcakes.
+        </p>
+        <a class="header__button button">
+          Learn more
+        </a>
+        <div class="header__number number">
+          <div class="number__toggler number__toggler--left"></div>
+          <div class="number__item number__item--active">
+            01
+          </div>
+          <div class="number__item">
+            02
+          </div>
+          <div class="number__item">
+            03
+          </div>
+          <div class="number__toggler number__toggler--right"></div>
+        </div>
+        <label
+            class="header__togglerNav"
+            for="nav-toggler">
+        </label>
+        <div class="header__nav">
+          <div class="wrapper-nav">
+            <div class="wrapper-nav__logo logo">
+              <a href="#home">
+                <img
+                class="logo"
+                src="./images/logo.png"
+                alt="Logo"
+                >
+              </a>
+            </div>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="">
+                    Bakery
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="">
+                    Bakershops
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="">
+                    About
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="">
+                    Contacts
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <a class="header__tel button button--secondary" href="tel: +380663363636">
+              Call back
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
   </body>
 </html>
