@@ -8,60 +8,94 @@
     <link rel="stylesheet" href="./styles/main.scss">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
-      href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
-      rel="stylesheet"
-    >
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cookie&family=Rubik&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cookie&family=Rubik:wght@400;700&display=swap"
       rel="stylesheet"
     >
   </head>
   <body class="page">
-    <header class="page__header header">
-      <input
-        class="header__checkbox"
-        type="checkbox"
-        id="nav-toggler"
-      >
-      <div class="header__wrapper">
-        <div class="header__logo">
-          <a href="#home">
-            <img
-            class="logo"
-            src="./images/logo.png"
-            alt="Logo"
-            >
-          </a>
-        </div>
-        <h1 class="header__title">
-          Creative bakery
-        </h1>
-        <p class="header__paragraph">
-          We bake your fantasies: croissants<br>cakes, cookies, and cupcakes.
-        </p>
-        <a class="header__button button">
-          Learn more
-        </a>
-        <div class="header__number number">
-          <div class="number__toggler number__toggler--left"></div>
-          <div class="number__item number__item--active">
-            01
+    <header class="page__header">
+      <div class="wrapper">
+        <div class="header">
+          <input
+          class="header__checkbox"
+          type="checkbox"
+          id="nav-toggler"
+          >
+          <div class="header__content">
+            <div class="header__logo">
+              <a href="#home">
+                <img
+                class="logo"
+                src="./images/logo.png"
+                alt="Logo"
+                >
+              </a>
+            </div>
+            <h1 class="header__title">
+              Creative bakery
+            </h1>
+            <p class="header__paragraph">
+              We bake your fantasies: croissants<br>cakes, cookies, and cupcakes.
+            </p>
+            <a class="header__button button">
+              Learn more
+            </a>
+            <div class="header__number number">
+              <div class="toggler toggler--left"></div>
+              <div class="number__item number__item--active">
+                01
+              </div>
+              <div class="number__item">
+                02
+              </div>
+              <div class="number__item">
+                03
+              </div>
+              <div class="toggler toggler--right"></div>
+            </div>
+            <label
+                class="header__togglerNav"
+                for="nav-toggler">
+            </label>
+            <div class="header__nav">
+              <div class="mobile-nav">
+                <a class="tel button button--secondary" href="tel: +380663363636">
+                  Call back
+                </a>
+                <nav class="nav">
+                  <ul class="nav__list">
+                    <li class="nav__item">
+                      <a class="nav__link" href="#bakery">
+                        Bakery
+                      </a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__link" href="#bakershops">
+                        Bakershops
+                      </a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__link" href="#about">
+                        About
+                      </a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__link" href="#contacts">
+                        Contacts
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <select class="language" name="language">
+                  <option value="en">En</option>
+                  <option value="ua">Ua</option>
+                  <option value="ru">Ru</option>
+                </select>
+              </div>
+            </div>
           </div>
-          <div class="number__item">
-            02
-          </div>
-          <div class="number__item">
-            03
-          </div>
-          <div class="number__toggler number__toggler--right"></div>
-        </div>
-        <label
-            class="header__togglerNav"
-            for="nav-toggler">
-        </label>
-        <div class="header__nav">
-          <div class="wrapper-nav">
-            <div class="wrapper-nav__logo logo">
+          <div class="desktop-nav">
+            <div class="logo">
               <a href="#home">
                 <img
                 class="logo"
@@ -73,36 +107,239 @@
             <nav class="nav">
               <ul class="nav__list">
                 <li class="nav__item">
-                  <a class="nav__link" href="">
+                  <a class="nav__link" href="#bakery">
                     Bakery
                   </a>
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link" href="">
+                  <a class="nav__link" href="#bakershops">
                     Bakershops
                   </a>
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link" href="">
+                  <a class="nav__link" href="#about">
                     About
                   </a>
                 </li>
                 <li class="nav__item">
-                  <a class="nav__link" href="">
+                  <a class="nav__link" href="#contacts">
                     Contacts
                   </a>
                 </li>
               </ul>
             </nav>
-            <a class="header__tel button button--secondary" href="tel: +380663363636">
-              Call back
-            </a>
+            <div class="desktop-nav__contacts">
+              <a class="tel button button--secondary" href="tel: +380663363636">
+                Call back
+              </a>
+              <select class="desktop-nav__lang language" name="language">
+                <option value="en">En</option>
+                <option value="ua">Ua</option>
+                <option value="ru">Ru</option>
+              </select>
+            </div>
           </div>
         </div>
       </div>
     </header>
     <main>
-
+      <section class="wrapper">
+        <div class="bakery" id="bakery">
+          <h2 class="section-title">
+            Bakery
+          </h2>
+          <div class="bakery__item">
+            <div>
+              <h3 class="bakery__type">
+                Cookies
+              </h3>
+              <h4 class="bakery__name">
+                Chocolate mix
+              </h4>
+              <p class="bakery__info">
+                Oatmeal cookies with golden raisins, orange zest and chocolate chips.
+              </p>
+              <div class="bakery__label">
+                <div class="bakery__price">
+                  $4
+                </div>
+                <div class="bakery__amount">
+                  100g
+                </div>
+              </div>
+            </div>
+            <div class="bakery__gallery">
+              <div class="bakery__toggler toggler toggler--left"></div>
+              <img
+                class="bakery__img"
+                src="./images/image1.png"
+                alt="Cookies photo"
+              >
+              <div class="bakery__toggler toggler toggler--right"></div>
+            </div>
+          </div>
+          <div class="bakery__item">
+            <div class="bakery__reverse">
+              <h3 class="bakery__type">
+                Cakes
+              </h3>
+              <h4 class="bakery__name">
+                Mint coffee mocca
+              </h4>
+              <p class="bakery__info">
+                Chocolate biscuit coffee cake topped with a mint buttercream and powder.
+              </p>
+              <div class="bakery__label">
+                <div class="bakery__price">
+                  $5
+                </div>
+                <div class="bakery__amount">
+                  100g
+                </div>
+              </div>
+            </div>
+            <div class="bakery__gallery bakery__gallery--reverse">
+              <div class="bakery__toggler toggler toggler--left"></div>
+              <img
+                class="bakery__img"
+                src="./images/image2.png"
+                alt="Cakes photo"
+              >
+              <div class="bakery__toggler toggler toggler--right"></div>
+            </div>
+          </div>
+          <div class="bakery__item">
+            <div>
+              <h3 class="bakery__type">
+                Croissants
+              </h3>
+              <h4 class="bakery__name">
+                Almond classic
+              </h4>
+              <p class="bakery__info">
+                Light multi-layered croissant strewn with cinammon and almond “petals”.
+              </p>
+              <div class="bakery__label">
+                <div class="bakery__price">
+                  $8.5
+                </div>
+                <div class="bakery__amount">
+                  3
+                </div>
+              </div>
+            </div>
+            <div class="bakery__gallery">
+              <div class="bakery__toggler toggler toggler--left"></div>
+              <img
+              class="bakery__img"
+              src="./images/image3.png"
+              alt="Croissants photo"
+              >
+              <div class="bakery__toggler toggler toggler--right"></div>
+            </div>
+          </div>
+          <div class="bakery__item">
+            <div  class="bakery__reverse">
+              <h3 class="bakery__type">
+                Cupcakes
+              </h3>
+              <h4 class="bakery__name">
+                Triple creamy
+              </h4>
+              <p class="bakery__info">
+                Chocolate salted caramel, Vanilla frutti pebbles and Chocolate chip cupcakes.
+              </p>
+              <div class="bakery__label">
+                <div class="bakery__price">
+                  $6.5
+                </div>
+                <div class="bakery__amount">
+                  3
+                </div>
+              </div>
+            </div>
+            <div class="bakery__gallery bakery__gallery--reverse">
+              <div class="bakery__toggler toggler toggler--left"></div>
+              <img
+              class="bakery__img"
+              src="./images/image4.png"
+              alt="Cupcakes photo"
+              >
+              <div class="bakery__toggler toggler toggler--right"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bakershops">
+        <div class="bakershops__wrapper wrapper" id="bakershops">
+          <h2 class="section-title">
+            Bakershops
+          </h2>
+          <form
+            class="bakershops__form"
+            action="#" method="get">
+            <select
+              class="bakershops__select"
+              name="city"
+            >
+              <option value="0">
+                City
+              </option>
+              <option value="lviv">
+                Lviv
+              </option>
+              <option value="lutsk">
+                Lutsk
+              </option>
+              <option value="kyiv">
+                Kyiv
+              </option>
+              <option value="zhytomyr">
+                Zhytomyr
+              </option>
+              <option value="vinnytsya">
+                Vinnytsya
+              </option>
+              <option value="chernigiv">
+                Chernigiv
+              </option>
+              <option value="poltava">
+                Poltava
+              </option>
+              <option value="kherson">
+                Kherson
+              </option>
+              <option value="dnipro">
+                Dnipro
+              </option>
+              <option value="kharkiv">
+                Kharkiv
+              </option>
+            </select>
+            <select
+              class="bakershops__select"
+              name="adress"
+            >
+              <option value="0">Adress</option>
+              <option value=""></option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+            <button
+              class="bakershops__button button button--primary"
+              type="submit"
+            >
+              Search
+            </button>
+          </form>
+          <img
+            class="bakershops__img"
+            src="./images/bakershops1.png"
+            alt="Map of Ukraine"
+          >
+        </div>
+      </section>
+      <section></section>
     </main>
     <footer>
 

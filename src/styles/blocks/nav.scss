@@ -1,5 +1,5 @@
 .nav {
-  
+
   &__list {
     list-style: none;
     display: flex;
@@ -8,6 +8,11 @@
 
     @media (min-width: 768px) {
       flex-direction: row;
+      padding-top: 14px;
+    }
+
+    @media (min-width: 992px) {
+      padding-top: 21px;
     }
   }
 
@@ -18,6 +23,7 @@
     font-size: 16px;
     line-height: 150%;
     color: $c-chocolate;
+    @include hover(color, $c-croissant);
 
     @media (min-width: 768px) {
       margin-right: 34px;
