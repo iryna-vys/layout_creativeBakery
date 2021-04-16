@@ -21,6 +21,7 @@
 
   &__togglerNav {
     position: absolute;
+    top: 31px;
     right: $mobPadding;
     z-index: 1;
     width: 22px;
@@ -36,7 +37,7 @@
     }
   }
 
-  &__checkbox:checked ~ &__wrapper > &__togglerNav {
+  &__checkbox:checked ~ &__content > &__togglerNav {
     background-image: url(../images/close.png);
   }
 
@@ -114,7 +115,7 @@
     }
   }
 
-  &__checkbox:checked ~ &__wrapper > &__nav {
+  &__checkbox:checked ~ &__content > &__nav {
     transform: translateY(100vh);
   }
 }

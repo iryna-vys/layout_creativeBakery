@@ -68,12 +68,14 @@
   &__label {
     width: 65px;
     height: 65px;
+    cursor: pointer;
     background-color: #f1cc9d;
     border-radius: 50%;
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
     text-align: center;
+    @include hover(transform, scale(1.1));
 
     @media (min-width: 992px) {
       width: 110px;
@@ -126,7 +128,7 @@
     object-fit: cover;
     object-position: center;
 
-    @media (min-width: 992px) {
+    @media (min-width: 1024px) {
       width: 660px;
     }
   }

@@ -21,6 +21,9 @@
       color: $c-cream;
       font-size: 40px;
       line-height: 47px;
+      &:nth-child(4) {
+        margin-bottom: 35px;
+      }
     }
 
     &--active {

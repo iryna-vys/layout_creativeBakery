@@ -1,7 +1,11 @@
 .language {
   border: none;
-  background-color: inherit;
-  width: 40px;
+  background-color: $c-croissant;
+  width: 45px;
   font: inherit;
   color: $c-chocolate;
+
+  &:focus {
+    border: 1px solid $c-cream;
+  }
 }
