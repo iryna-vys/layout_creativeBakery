@@ -1,7 +1,5 @@
 .desktop-nav {
   display: none;
-  max-width: 1400px;
-  margin: 0 auto;
 
   @media (min-width: 768px) {
     display: flex;
@@ -23,7 +21,7 @@
   &__contacts {
     display: flex;
 
-    @media (min-width: 992px) {
+    @media (min-width: 768px) {
       padding-top: 21px;
     }
   }
