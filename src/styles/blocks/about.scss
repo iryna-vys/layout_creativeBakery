@@ -5,6 +5,10 @@
     padding: 40px $paddingX 170px;
   }
 
+  &__wrapper {
+    @include wrapper;
+  }
+
   &__info {
     margin: 0 auto 20px;
     max-width: 480px;

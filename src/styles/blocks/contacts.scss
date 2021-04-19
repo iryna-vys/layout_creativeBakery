@@ -11,6 +11,10 @@
       }
     }
 
+    &__wrap {
+      @include wrapper;
+    }
+
     @media (min-width: 992px) {
       padding: 0 $paddingX;
     }
@@ -92,11 +96,21 @@
 
   }
 
-  &__iframe {
+  &__iframeWrap {
     position: relative;
+    height: 100vh;
+
+    @media (min-width: 768px) {
+      height: 507px;
+      grid-column: 2;
+    }
+  }
+
+  &__iframe {
+    position: absolute;
     left: -$mobPadding;
+    width: calc(100% + #{$mobPadding * 2});
     border: none;
-    width: 100vw;
     height: 100vh;
     top: 4px;
 
@@ -105,7 +119,7 @@
       height: 507px;
       top: 0;
       left: $mobPadding;
-      grid-column: 2;
+      
     }
 
     @media (min-width: 992px) {

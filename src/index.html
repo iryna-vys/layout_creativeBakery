@@ -14,7 +14,7 @@
   </head>
   <body class="page">
     <header class="page__header">
-      <div class="wrapper">
+      <div class="page__wrapper">
         <div class="header">
           <input
             class="header__checkbox"
@@ -143,7 +143,7 @@
       </div>
     </header>
     <main>
-      <section class="wrapper">
+      <section class="page__wrapper">
         <div class="bakery" id="bakery">
           <h2 class="section-title">
             Bakery
@@ -271,7 +271,7 @@
         </div>
       </section>
       <section class="bakershops">
-        <div class="bakershops__wrapper wrapper" id="bakershops">
+        <div class="bakershops__wrapper" id="bakershops">
           <h2 class="section-title">
             Bakershops
           </h2>
@@ -340,7 +340,7 @@
         </div>
       </section>
       <section class="about" id="about">
-        <div class="wrapper">
+        <div class="about__wrapper">
           <h2 class="section-title">
             About
           </h2>
@@ -398,14 +398,14 @@
       </section>
       <section class="contacts" id="contacts">
         <div class="contacts__wrapper">
-          <div class="wrapper">
+          <div class="contacts__wrap">
             <h2 class="contacts__title section-title">
               Contacts
             </h2>
           </div>
         </div>
         <div class="contacts__wrapper">
-          <div class="wrapper">
+          <div class="contacts__wrap">
             <div class="contacts__grid">
               <div class="contacts__content">
                 <h4 class="contacts__list">
@@ -442,18 +442,20 @@
                   </span>
                 </a>
               </div>
-              <iframe
+              <div class="contacts__iframeWrap">
+                <iframe
                 class="contacts__iframe"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.3621856365253!2d30.510088815613766!3d50.39708737946807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c8ca89299f11%3A0x4a4968e0ee2613b5!2z0LLRg9C70LjRhtGPINCT0L7Qu9C-0YHRltGX0LLRgdGM0LrQsCwgNTMsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1618658454053!5m2!1suk!2sua"
                 loading="lazy"
                 id="map"
-             ></iframe>
+               ></iframe>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section class="feedback">
-        <div class="feedback__wrapper wrapper">
+        <div class="feedback__wrapper">
           <div class="feedback__form">
             <p class="feedback__caption">
               We’d love to hear your feedback
@@ -497,7 +499,7 @@
       </section>
     </main>
     <footer class="page__footer">
-      <div class="wrapper">
+      <div class="page__wrapper">
         <div class="footer">
           <div class="footer__content">
             <div class="footer__logo logo">
