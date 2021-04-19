@@ -6,14 +6,23 @@
   font-size: 16px;
   line-height: 26px;
   color: $c-chocolate;
+  margin-bottom: 30px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
 
   &::before {
     position: absolute;
-    bottom: - 40px;
-    left: 0;
+    bottom: 60px;
     content: "+38 066 336 36 36";
     display: block;
     min-width: 143px;
+
+    @media (min-width: 768px) {
+      bottom: - 40px;
+      left: 0;
+    }
 
     @media (min-width: 1160px) {
       top: 0;
